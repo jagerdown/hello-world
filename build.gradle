@@ -2,8 +2,8 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
 // Repositories
 repositories {
@@ -17,7 +17,7 @@ dependencies {
     compile 'org.slf4j:slf4j-api:1.7.12'
 
     // Groovy
-    compile 'org.codehaus.groovy:groovy-all:2.4.3'
+    compile 'org.codehaus.groovy:groovy-all:2.3.10'
 
     // Testing
     testCompile 'org.mockito:mockito-all:1.10.19'
