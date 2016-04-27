@@ -1,12 +1,9 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
-apply plugin: 'application'
 
-mainClassName='com.jagerdown.problems.HelloWorld.Driver'
-
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 // Repositories
 repositories {
@@ -33,14 +30,6 @@ sourceSets {
             srcDirs = ['src/main/java']
         }
     }
-}
-
-task intTest(type: Test) {
-    exclude '**/unit/**'
-}
-
-task unitTest(type: Test) {
-    exclude '**/integration/**'
 }
 
 task wrapper(type: Wrapper) {
